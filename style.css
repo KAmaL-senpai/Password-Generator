@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+  height: 500px;
+  width: 500px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    180deg,
+    rgb(212, 199, 13) 0%,
+    rgba(237, 234, 125, 1) 63%,
+    rgb(214, 222, 224) 100%
+  );
+  text-align: center;
+  position: relative;
+  border-radius: 5px;
+}
+.top {
+  padding: 1rem 2rem;
+  line-height: 3.5rem;
+  height: 90%;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: bolder;
+}
+h1 i {
+  color: red;
+}
+.box input[type="text"] {
+  width: 80%;
+  height: 3rem;
+  padding: 0 5px;
+  text-align: center;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.box input[type="range"] {
+  width: 30%;
+  /* height: 3rem; */
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  height: 10px; /* Thickness of the track */
+  background-color: #ddd; /* Track color */
+}
+input[type="range"] {
+  -webkit-appearance: none; /* Remove default styling in WebKit browsers */
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Remove default styling */
+  width: 15px;
+  height: 30px;
+  background-color: red; /* Color of the thumb (dark red) */
+  cursor: pointer;
+  border-radius: 4px;
+  margin-top: -11px; /* Center the thumb with the track */
+}
+
+.checkBox p {
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  height: 10%;
+  width: 100%;
+  background-color: orange;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 0 0 5px 5px;
+}
